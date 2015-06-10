@@ -310,7 +310,7 @@ if (isset($_POST['tax_calculator'])) {
 		</div>
 		<footer class="container" style="margin-top:30px">
 			<div class="text-center" style="font-size:.9em">
-				Written by <a href="https://www.damchey.com">Damchey</a> and source code available on Github.
+				Written by <a href="https://www.damchey.com">Damchey</a> | Send feedback to damchey.lhendup@gmail.com
 			</div>
 		</footer>
 	</body>

@@ -201,13 +201,16 @@ if (isset($_POST['tax_calculator'])) {
 	<body>		
 		<div class="container">
 			<div class="jumbotron">
-				<h1>Bhutan Car Tax Calculator</h1>
+				<h1 class="text-center">Bhutan Car Tax Calculator</h1>
 				<p>
 					This little utility calculates the car import taxes in Bhutan applicable since July 2014.
 				</p>
 				<p>
 					The revised taxes are based on the cubic capacity and the type of the engine. A total of three different taxes (sales tax, customs duty & green tax) are applied on 
-					the cost price of the vehicle. Electric battery operated cars do not attract any taxes and cars imported from India do not attract sales tax.
+					the cost price of the vehicle. Electric battery operated cars do not attract any taxes and cars imported from India do not attract customs duty.
+				</p>
+				<p>
+					As the rates are based off of figures mentioned in a Kuensel report, I cannot guarantee the accuracy of the calculation.
 				</p>
 			</div>
 	

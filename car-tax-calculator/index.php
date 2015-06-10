@@ -196,7 +196,7 @@ if (isset($_POST['tax_calculator'])) {
 	<head>
 		<title>Bhutan Car Tax Calculator - Sales Tax and Customs Duty <?= date('Y'); ?></title>
 		<meta name="description" value="Bhutan Car Tax Calculator for revised vehicle import taxes 2014.">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
 	</head>
 	<body>		
 		<div class="container">

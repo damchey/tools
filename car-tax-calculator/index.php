@@ -201,6 +201,10 @@ if (isset($_POST['tax_calculator'])) {
 		<meta name="description" value="Bhutan Car Tax Calculator for revised vehicle import taxes 2014.">
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<meta property="og:image" content="https://www.damchey.com/tools/images/car-tax-calculator.jpg" />
+		<meta property="og:url" content="https://www.damchey.com/tools/car-tax-calculator/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Vehicle import tax calculator for Bhutan">
+		<meta property="og:description" content="Calculate the tax and total on road price of a new car in Bhutan, with and without quotas.">		
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

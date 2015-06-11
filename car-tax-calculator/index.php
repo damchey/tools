@@ -211,6 +211,14 @@ if (isset($_POST['tax_calculator'])) {
 		</script>
 	</head>
 	<body>		
+	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=302666589934689";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 		<div class="container">
 			<div class="jumbotron">
 				<h1 class="text-center">Bhutan Car Tax Calculator</h1>
@@ -223,7 +231,10 @@ if (isset($_POST['tax_calculator'])) {
 				</p>
 				<p>
 					As the rates are based off of figures mentioned in a Kuensel report, I cannot guarantee the accuracy of the calculation.
-				</p>				
+				</p>
+				<div class="text-center">
+					<div class="fb-like" data-href="https://www.damchey.com/tools/car-tax-calculator/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+				</div>				
 			</div>
 	
 			<div class="row">

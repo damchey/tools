@@ -82,8 +82,8 @@ class TaxCalculator {
 			$this->customsDutyPercentage = 20;
 			$this->greenTaxPercentage = 5;
 		} else {
-			if ($this->car->country == 'india' && $this->car) {
-				$this->salesTaxPercentage = 45;
+			if ($this->car->country == 'india') {
+				$this->salesTaxPercentage = $this->car->engine->capacity < 1500 ? 45 : 50;
 				$this->greenTaxPercentage = 10;
 			} else {
 				switch (true) {
@@ -200,6 +200,15 @@ if (isset($_POST['tax_calculator'])) {
 		<title>Bhutan Car Tax Calculator - Sales Tax and Customs Duty <?= date('Y'); ?></title>
 		<meta name="description" value="Bhutan Car Tax Calculator for revised vehicle import taxes 2014.">
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-63264676-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
 	</head>
 	<body>		
 		<div class="container">
@@ -214,7 +223,7 @@ if (isset($_POST['tax_calculator'])) {
 				</p>
 				<p>
 					As the rates are based off of figures mentioned in a Kuensel report, I cannot guarantee the accuracy of the calculation.
-				</p>
+				</p>				
 			</div>
 	
 			<div class="row">

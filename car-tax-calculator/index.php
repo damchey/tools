@@ -200,6 +200,7 @@ if (isset($_POST['tax_calculator'])) {
 		<title>Bhutan Car Tax Calculator - Sales Tax and Customs Duty <?= date('Y'); ?></title>
 		<meta name="description" value="Bhutan Car Tax Calculator for revised vehicle import taxes 2014.">
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<meta property="og:image" content="https://www.damchey.com/tools/images/car-tax-calculator.jpg" />
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
